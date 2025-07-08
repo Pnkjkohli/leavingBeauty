@@ -14,12 +14,12 @@ class AdminDashboardController extends Controller
     public function index()
     {
         // Return the admin dashboard view
-        return view('dashboard');
+        return view('admin.dashboard');
     }
 
      public function edit(Request $request)
     {
-        return view('profile.edit', [
+        return view('admin.profile.edit', [
             'user' => $request->user(),
         ]);
     }
